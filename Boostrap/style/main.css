@@ -1,0 +1,75 @@
+html {
+  box-sizing: border-box;
+  font-family: "Quicksand";
+  font-size: 16px;
+}
+html *,
+html *::after,
+html *::before {
+  box-sizing: inherit;
+}
+html * {
+  font-family: "Quicksand";
+}
+
+.tail-btn {
+  font-size: 23px;
+}
+
+.header-container {
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #D7D7D7;
+  display: flex;
+}
+.header-container__brand {
+  background-color: #F4893C;
+  max-width: 300px;
+  min-width: 250px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+.header-container__tail {
+  width: 100%;
+  height: 100%;
+  justify-content: right;
+  align-items: center;
+}
+.header-container__tail a {
+  text-decoration: none;
+}
+
+.main-container {
+  width: 100%;
+  height: calc(100vh - 60px);
+  background-color: yellow;
+  justify-content: center;
+  align-items: center;
+}
+.main-container__card {
+  height: 90%;
+  min-height: 600px;
+  width: 80%;
+  background-color: lightgray;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-right {
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+}
+
+.card-left {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .card-left {
+    display: block;
+  }
+}/*# sourceMappingURL=main.css.map */
